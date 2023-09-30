@@ -1,0 +1,269 @@
+
+
+.Aboutme{
+  /* background-color:#F2F2F2; */
+  padding-top: 10px;
+  /* padding: 20px 0px 200px 0px; */
+}
+.Aboutme h2{
+  color: rgb(2, 38, 53);
+  text-align: center;
+  margin-top: 0px;    
+}
+.ih5{
+  padding-top: 5px;
+  text-decoration: solid;
+  color: rgb(40, 66, 66);
+}
+.aboutdesc{
+  text-decoration: solid;
+  color: rgb(63, 83, 83);
+}
+.aboutmeflexbox {
+  padding-top: 25px;
+  display: flex;   
+  flex-flow: row wrap; /* flex-direction: row;flex-wrap: wrap; */
+  justify-content:space-evenly; /*justify-content: center; */
+  align-items: center;   
+  text-align: center; 
+}
+
+.sbox {
+    width: 500px;
+    background-color: #ddd;
+  }
+
+.skill {
+text-align: right;
+padding-top: 4px;
+padding-bottom: 0px;
+color: white;
+}
+
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11{
+background-color: #233540;
+}
+
+.skilltag{
+  position: absolute;
+  color: white;
+  width: 100px;
+  height: 28px;
+  background-color: gray;
+  /* transition: transform .2s; */
+}
+
+
+.skillhtml, .skillcss, .skilljs, .skillpython, .skillnodejs, .skillreactjs, .skillpostgres, .skilllite, .skillsql, .skilldjango, .skillasp {
+  transition: transform .2s;
+}
+.skillhtml:hover, .skilldjango:hover, .skillcss:hover, .skilljs:hover, .skillpython:hover, .skillnodejs:hover, .skillreactjs:hover, .skillpostgres:hover, .skilllite:hover, .skillsql:hover, .skillasp:hover{
+  transform: scale(1.1);
+}
+.photoskill {
+  padding-top: 25px;
+  display: flex;   
+  flex-flow: row wrap; /* flex-direction: row;flex-wrap: wrap; */
+  justify-content: space-evenly; /*justify-content: center; */
+  align-items: center;   
+  text-align: center; 
+  padding: 10px;
+}
+
+.sdfimg{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  transition: 1s ease;
+  pointer-events: none;
+}
+img{
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .aboutmeflexbox{
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: column; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 200px;
+    background-color: #ddd;
+  }
+  .skilltag{
+    width: 60px; 
+  }
+  #tag1, #tag2, #tag3, #tag4, #tag5, #tag6, #tag7,  #tag9, #tag10, #tag11{
+    font-size: 12px;
+    vertical-align: center;
+  }
+ #tag8{
+    font-size: 10px;
+    vertical-align: center;
+  }
+
+  
+}
+
+@media only screen and (min-width: 320px) {
+  .aboutmeflexbox{
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: column; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;  
+      
+  }
+  .sbox {
+    width: 310px;
+    background-color: #ddd;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .aboutmeflexbox{
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: column; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 340px;
+    background-color: #ddd;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) {
+  .aboutmeflexbox{
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: column; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 370px;
+    background-color: #ddd;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .aboutmeflexbox{
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: column; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 600px;
+    background-color: #ddd;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .aboutmeflexbox{
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: row; 
+    justify-content: center; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 500px;
+    
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .aboutmeflexbox{
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: nowrap;
+  } 
+  .photoskill {
+    padding-top: 25px;
+    display: flex;   
+    flex-flow: row; 
+    justify-content: space-evenly; 
+    padding-bottom: 20px;  
+  }
+  .sdfimg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;    
+  }
+  .sbox {
+    width: 500px;
+    
+  }
+}

@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+section:nth-of-type(1){
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(2, 38, 53, 0.884), rgba(0, 0, 0, 0.6)), url("../images/shoes.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.herotext{
+    width: 500px;    
+    text-shadow:2px 2px 4px #000000;
+    margin: 0;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lightgrey;
+    /* color: black; */
+
+    text-align: center;
+    padding: 4px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, rgba(100, 100, 100, 0.4)
+    , rgba(252, 250, 250,0.5));
+    border-image-slice: 1;
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: 1s ease;
+}
+section > * {
+    position: relative;
+    z-index: 2;
+}
+
+nav{
+    transition: 1s ease;
+}
+.bg-dark{
+    background-color: #233540 !important;
+}
+hr{
+    width: 10%;
+    height: 5px;
+    background:#1A2A40;
+    margin: auto;
+    border: none; 
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 320px) {
+    .herotext{
+        width: 230px;       
+    }
+    .herotext > h1{
+        font-size: 18px;
+    }
+    .herotext > p{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 320px) {
+    .herotext{
+        width: 300px;       
+    }
+    .herotext > h1{
+        font-size: 24px;
+    }
+    .herotext > p{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 360px) {
+    .herotext{
+        width: 350px;       
+    }
+    .herotext > h1{
+        font-size: 24px;
+    }
+    .herotext > p{
+        font-size: 18px;
+    }
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 400px) {
+    .herotext{
+        width: 395px; 
+        /* border: none;       */
+    }
+    .herotext > h1{
+        font-size: 26px;
+    }
+    .herotext > p{
+        font-size: 20px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .herotext{
+        width: 450px; 
+    }
+    .herotext > h1{
+        font-size: 30px;
+    }
+    .herotext > p{
+        font-size: 24px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .herotext{
+        width: 550px; 
+    }
+    .herotext > h1{
+        font-size: 36px;
+    }
+    .herotext > p{
+        font-size: 30px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .herotext{
+        width: 600px; 
+    }
+    .herotext > h1{
+        font-size: 38px;
+    }
+    .herotext > p{
+        font-size: 32px;
+    }
+}

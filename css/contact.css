@@ -1,0 +1,44 @@
+
+.contact{
+    text-align: center;
+    bottom: 0px;
+}
+.contact hr{
+    width: 10%;
+    height: 2px;
+    background: darkslategray;
+    margin: auto;
+    border: none; 
+    border-radius: 3px;
+}
+
+i{
+    border: none;
+    font-size: 24px;
+    color: darkslategray;
+    padding: 10px;
+}
+.social
+{
+    padding-top: 10px;
+}
+.social a{
+    text-decoration: none;
+}
+.pagelinks{
+    text-decoration: none;
+   
+    color: darkcyan;
+   
+}
+.pagelinks:hover{
+    text-decoration: none;
+    color: #1A2A40;
+}
+footer a:hover{
+    text-decoration: none;
+    
+}
+footer p{
+    text-align: center;
+}
